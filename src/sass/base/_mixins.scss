@@ -11,3 +11,10 @@
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
+
+@mixin text-default {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 300;
+    color: $color-text;
+}
