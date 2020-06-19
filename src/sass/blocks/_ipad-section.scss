@@ -1,0 +1,33 @@
+.ipad {
+    height: 750px;
+    padding-top: 120px;
+    background-color: $color-black;
+
+    &__header {
+        @include header($color-white);
+        max-width: 60%;
+        margin-bottom: 49px;
+    }
+
+    &__descr {
+        @include text-default;
+        max-width: 39%;
+        color: $color-white;
+        opacity: 0.5;
+    }
+}
+
+.slider {
+    position: absolute;
+    top: 145px;
+    right: -10%;
+    &__inner {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-59%);
+        max-width: 687px;
+        max-height: 582px;
+        border: 2.0px solid $color-grey-dark-3;
+    }
+}

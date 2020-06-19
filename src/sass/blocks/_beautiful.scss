@@ -7,11 +7,8 @@
     }
 
     &__header {
+        @include header($color-text);
         margin-bottom: 45px;
-        font-size: 72px;
-        line-height: 1.2;
-        font-weight: 100;
-        color: $color-text;
     }
 
     &__subheader {

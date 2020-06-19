@@ -18,3 +18,10 @@
     font-weight: 300;
     color: $color-text;
 }
+
+@mixin header($color) {
+    font-size: 72px;
+    line-height: 80px;
+    font-weight: 100;
+    color: $color;
+}
