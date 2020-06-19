@@ -2,6 +2,7 @@
     height: 750px;
     padding-top: 120px;
     background-color: $color-black;
+    position: relative;
 
     &__header {
         @include header($color-white);
@@ -20,8 +21,8 @@
 
 .slider {
     position: absolute;
-    top: 145px;
-    right: -10%;
+    top: 265px;
+    right: 0;
 
     &__inner {
         position: absolute;
@@ -30,7 +31,7 @@
         transform: translateY(-59%);
         max-width: 687px;
         max-height: 582px;
-        border: 2.0px solid $color-grey-dark-3;
+        // border: 2.0px solid $color-grey-dark-3;
     }
 
     &__prev {

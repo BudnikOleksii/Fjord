@@ -1,0 +1,39 @@
+.features {
+    min-height: 945px;
+    padding-top: 312px;
+    background-color: $color-grey-light-3;
+
+    &__header-wrapper {
+        text-align: center;
+        margin-left: 7.5%;
+        margin-right: 7.5%;
+    }
+
+    &__header {
+        @include small-text;
+        margin-bottom: 41px;
+        color: $color-black;
+    }
+
+    &__subheader {
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 300;
+        color: $color-text;
+    }
+
+    &__item {
+        flex: 0 0 30%;
+        margin-top: 79px;
+        display: flex;
+    }
+
+    &__descr {
+        margin-left: 19px;
+    }
+
+    &__text {
+        @include text-default;
+        opacity: 0.5;
+    }
+}
