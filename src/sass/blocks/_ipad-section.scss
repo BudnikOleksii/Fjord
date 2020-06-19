@@ -14,6 +14,7 @@
         max-width: 39%;
         color: $color-white;
         opacity: 0.5;
+        margin-bottom: 164px;
     }
 }
 
@@ -21,6 +22,7 @@
     position: absolute;
     top: 145px;
     right: -10%;
+
     &__inner {
         position: absolute;
         top: 50%;
@@ -29,5 +31,26 @@
         max-width: 687px;
         max-height: 582px;
         border: 2.0px solid $color-grey-dark-3;
+    }
+
+    &__prev {
+        @include flex-centered;
+        position: absolute;
+        top: 41%;
+        left: -70px;
+        width: 70px;
+        height: 70px;
+        border: 3.0px solid rgba($color-white, .2);
+        border-radius: 100%;
+        font-family: arial;
+        font-size: 30px;
+        font-weight: 500;
+        color: rgba($color-white, 0.4);
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            color: rgba($color-white, 1);
+        }
     }
 }
