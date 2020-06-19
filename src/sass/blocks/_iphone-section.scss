@@ -8,18 +8,86 @@
         align-items: center;
     }
 
-    &__carousel {
-        margin-left: -75px;
-        width: 801px;
-        height: 789px;
-        background: url(../img/device.png) center center/cover no-repeat;
-    }
-
     &__descr-block {
         width: 386px;
         height: 674px;
-        padding: 40px 34px 0 45px;
         background-color: $color-white;
         border-radius: 2.0px;
+    }
+
+    &__descr-item {
+        margin: 39px 45px 0 34px;
+        display: flex;
+
+        &:nth-child(3) {
+            margin-bottom: 64px;
+        }
+    }
+
+    &__text {
+        margin-left: 23px;
+        p {
+            @include text-default;
+            opacity: 0.5;
+        }
+    }
+
+    &__header {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+    }
+}
+
+.carousel {
+    margin-left: -75px;
+    width: 801px;
+    height: 789px;
+    background: url(../img/device.png) center center/cover no-repeat;
+    position: relative;
+
+    &__inner {
+        position: absolute;
+        top: 45%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__prev,
+    &__next {
+        border: 3.0px solid rgba($color-white, .4);
+        border-radius: 100%;
+        position: absolute;
+        @include flex-centered;
+    }
+
+    &__next {
+        width: 76px;
+        height: 64px;
+        top: 151px;
+        right: 103px;
+    }
+
+    &__prev {
+        width: 80px;
+        height: 68px;
+        bottom: 182px;
+        left: 169px;
+    }
+
+    .arrow-prev, 
+    .arrow-next {
+        font-family: arial;
+        font-size: 30px;
+        font-weight: 500;
+        opacity: 0.5;
+        color: $color-white;
+        transform: rotate(-45deg);
+        cursor: pointer;
+        transition: all .2s;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }

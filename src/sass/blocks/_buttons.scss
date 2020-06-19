@@ -18,4 +18,12 @@
         color: $color-blue;
         box-shadow: $shadow-dark;
     }
+
+    &-iphone {
+        width: 100%;
+        width: 386px;
+        height: 60px;
+        border-radius: 0.0px 0.0px 2.0px 2.0px;
+        color: $color-grey-light-4;
+    }
 }
