@@ -3,3 +3,11 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin small-text {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}

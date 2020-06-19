@@ -1,0 +1,73 @@
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &__logo {
+        margin-right: auto;
+    }
+
+    &:last-child {
+        margin-right: 69px;
+    }
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 0;
+
+    &__item {
+        margin-right: 29px;
+    }
+
+    &__link {
+        &,
+        &:link,
+        &:visited {
+            @include small-text;
+            opacity: 0.5;
+            color: $color-text;
+        }
+        
+        &:hover {
+            opacity: 1;
+            text-decoration: none;
+        }
+    }
+}
+
+.hamburger {
+    position: fixed;
+    right: 15px;
+    top: 47px;
+    width: 20px;
+    height: 12px;
+    z-index: 100;
+    cursor: pointer;
+
+    span {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: $color-text;
+        margin-bottom: 2px;
+        transition: 0.5px;
+    }    
+
+    &__active {
+        span {
+            margin-bottom: -2px;
+            &:nth-child(1) {
+                transform: translateY(3px) rotate(-45deg);
+            }
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+    }
+}

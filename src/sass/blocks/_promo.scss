@@ -1,0 +1,21 @@
+.promo {
+    min-height: 897px;
+    background: url(../img/bg_1.jpg) center center/cover no-repeat;
+    padding: 47px 0 0 0;
+    &__title {
+        margin-top: 208px;
+        margin-left: -8px;
+        font-size: 72px;
+        line-height: 80px;
+        font-weight: 100;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        max-width: 60%;
+    }
+    &__label {
+        margin-top: 15px;
+        @include small-text;
+        color: $color-text;
+    }
+}

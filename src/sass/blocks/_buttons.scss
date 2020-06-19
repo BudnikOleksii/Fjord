@@ -1,0 +1,9 @@
+.btn {
+    @include small-text;
+    width: 152px;
+    height: 42px;
+    background-color: $color-black;
+    border: none;
+    border-radius: 2.0px;
+    color: $color-white;
+}
