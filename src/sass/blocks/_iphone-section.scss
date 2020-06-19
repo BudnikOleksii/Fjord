@@ -1,0 +1,25 @@
+.iphone {
+    min-height: 900px;
+    padding: 76px 0 61px 0;
+    background-color: $color-blue;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__carousel {
+        margin-left: -75px;
+        width: 801px;
+        height: 789px;
+        background: url(../img/device.png) center center/cover no-repeat;
+    }
+
+    &__descr-block {
+        width: 386px;
+        height: 674px;
+        padding: 40px 34px 0 45px;
+        background-color: $color-white;
+        border-radius: 2.0px;
+    }
+}

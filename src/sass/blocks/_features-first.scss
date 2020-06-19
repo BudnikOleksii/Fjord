@@ -9,7 +9,7 @@
     }
 
     &__item {
-        max-width: 24.5%;
+        max-width: 29%;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -46,8 +46,17 @@
     }
 
     &__link {
-        @include small-text;
-        margin-top: 28px;
-        color: $color-text;
+        &,
+        &:link,
+        &:visited {
+            @include small-text;
+            margin-top: 28px;
+            color: $color-text;
+        }
+
+        &:hover {
+            color: $color-dark;
+            background-color: $color-blue;
+        }
     }
 }

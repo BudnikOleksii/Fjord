@@ -6,4 +6,16 @@
     border: none;
     border-radius: 2.0px;
     color: $color-white;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:active, &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        background-color: lighten($color-black, 10%);
+        color: $color-blue;
+        box-shadow: $shadow-dark;
+    }
 }
