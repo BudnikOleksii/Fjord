@@ -42,21 +42,7 @@
     &__text {
         @include text-default;
         margin-top: 30px;
+        margin-bottom: 28px;
         opacity: 0.5;
-    }
-
-    &__link {
-        &,
-        &:link,
-        &:visited {
-            @include small-text;
-            margin-top: 28px;
-            color: $color-text;
-        }
-
-        &:hover {
-            color: $color-dark;
-            background-color: $color-blue;
-        }
     }
 }
