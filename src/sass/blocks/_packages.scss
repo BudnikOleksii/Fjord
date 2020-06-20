@@ -1,0 +1,65 @@
+.join {
+    height: 240px;
+    background-color: $color-white;
+    padding: 80px 15px;
+
+    &__header {
+        @include header($color-black);
+        text-align: center;
+        margin-bottom: 0;
+    }
+}
+
+.packages {
+    padding: 75px 0 150px 0;
+    background-color: $color-grey-light-3;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__item {
+        flex: 0 0 33.333333%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 304px;
+        height: 432px;
+        padding: 42px 39px 42px 39px;
+        background-color: transparent;
+        border-radius: 2.0px;
+
+        &--active {
+            background-color: $color-black;
+            & > * {
+                color: $color-white !important;
+            }
+        }
+
+        & > button {
+            margin-top: auto;
+        }
+    }
+
+    &__name {
+        @include small-text;
+        color: $color-black;
+    }
+
+    &__descr {
+        @include text-default;
+        text-align: center;
+        opacity: 0.5;
+        color: #000000;
+    }
+
+    &__price {
+        font-size: 50px;
+        line-height: 120px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $color-black;
+    }
+}

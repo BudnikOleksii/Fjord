@@ -26,14 +26,31 @@
         border-radius: 0.0px 0.0px 2.0px 2.0px;
         color: $color-grey-light-4;
     }
+}
+
+.button {
+    @include small-text;
+    width: 180px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: none;
+    color: $color-black;
+    cursor: pointer;
+    transition: all .2s;
+
+    &:active, &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        color: darken($color-blue, 10%);
+        box-shadow: 1px 3px 10px darken($color-blue, 10%);
+    }
 
     &-blue {
-        width: 180px;
-        height: 50px;
         background-color: $color-blue;
-        border-radius: 25.0px;
-        color: $color-black;
-
+    
         &:hover {
             background-color: darken($color-blue, 10%);
             color: $color-black;
