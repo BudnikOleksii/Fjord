@@ -1,0 +1,42 @@
+.photo {
+    background-color: $color-grey-light-3;
+    padding: 50px 0;
+    position: relative;
+
+    &__row {
+        min-height: 1289px;
+        align-content: space-evenly;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    &__header {
+        margin-left: -3px;
+        font-size: 26px;
+        line-height: 80px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $color-black;
+    }
+
+    &__item:first-child {
+        margin-left: -20px;
+    }
+
+    &__item:last-child {
+        margin-top: 20px;
+        margin-right: -60px;
+    }
+
+    &__left {
+        position: absolute;
+        left: 0;
+        top: 53%;
+    }
+
+    &__right {
+        position: absolute;
+        right: 0;
+        top: 30%;
+    }
+}
