@@ -4,7 +4,7 @@
     height: 42px;
     background-color: $color-black;
     border: none;
-    border-radius: 2.0px;
+    border-radius: 2px;
     color: $color-white;
     cursor: pointer;
     transition: all .2s;
@@ -21,39 +21,27 @@
 
     &-iphone {
         width: 100%;
-        width: 386px;
         height: 60px;
-        border-radius: 0.0px 0.0px 2.0px 2.0px;
+        border-radius: 0 0 2px 0;
         color: $color-grey-light-4;
     }
-}
 
-.button {
-    @include small-text;
-    width: 180px;
-    height: 50px;
-    background-color: transparent;
-    border-radius: 25px;
-    border: none;
-    color: $color-black;
-    cursor: pointer;
-    transition: all .2s;
-
-    &:active, &:focus {
-        outline: none;
+    &-transparent {
+        @include btn-default(transparent);
+    
+        &:hover {
+            box-shadow: 1px 3px 10px darken($color-blue, 10%);
+            background-color: transparent;
+        }
     }
-
-    &:hover {
-        color: darken($color-blue, 10%);
-        box-shadow: 1px 3px 10px darken($color-blue, 10%);
-    }
-
+    
     &-blue {
-        background-color: $color-blue;
+        @include btn-default($color-blue);
+        color: $color-black;
     
         &:hover {
             background-color: darken($color-blue, 10%);
-            color: $color-black;
+            color: $color-black !important;
             box-shadow: 1px 3px 10px $color-blue;
         }
     }

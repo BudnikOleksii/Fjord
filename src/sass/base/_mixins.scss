@@ -25,3 +25,11 @@
     font-weight: 100;
     color: $color;
 }
+
+@mixin btn-default($bg-color) {
+    width: 180px;
+    height: 50px;
+    border-radius: 25px;
+    color: $color-black;
+    background-color: $bg-color;
+}
