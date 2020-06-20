@@ -1,0 +1,64 @@
+.qoutes-slider {
+    background-color: $color-grey-light-3;
+    &__container {
+        max-width: 795px;
+        min-height: 385px;
+        margin: 0 auto;
+        background-color: $color-white;
+        border-radius: 2.0px;
+    }
+    
+    &__wrapper {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    &__inner {
+        display: flex;        
+        width: 300%;
+    }
+
+    &__slide {
+        width: 100%;
+        padding: 80px 42px 60px 42px;
+        text-align: center;
+        position: relative;
+
+        &::before {
+            content: "\201C";
+            position: absolute;
+            top: 30px;
+            left: 33px;
+            line-height: 1;
+            font-family: sans-serif;
+            font-size: 75px;
+            color: rgba($color-text, .2);
+            z-index: 1;
+        }
+
+        &::after {
+            content: "\201D";
+            position: absolute;
+            bottom: 0;
+            right: 33px;
+            line-height: 1;
+            font-family: sans-serif;
+            font-size: 75px;
+            color: rgba($color-text, .2);
+            z-index: 1;
+        }
+    }
+
+    &__text {
+        margin-bottom: 27px;
+        font-size: 42px;
+        line-height: 1.2;
+        font-weight: 100;
+        color: $color-text;
+    }
+
+    &__author {
+        @include small-text;
+        color: $color-black;
+    }
+}
