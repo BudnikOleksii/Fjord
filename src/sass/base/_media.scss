@@ -1,0 +1,127 @@
+@media only screen and (max-width: 1350px) {
+    .ipad__descr {
+        max-width: 33%;
+    }
+
+    .photo {
+        &__item {
+            img {
+                width: 85%;
+            }
+
+            &:nth-child(4) {
+                margin-left: auto;
+            }
+        }
+
+        &__left {
+            left: 10px;
+            top: 60%;
+        }
+    }
+
+    .footer__label {
+        font-size: 80px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .container-small {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .promo {
+        min-height: 760px;
+    }
+
+    .iphone {
+        padding: 40px 0;
+        min-height: 700px;
+
+        &__descr-item {
+            margin: 25px 25px 0 25px;
+            display: flex;
+        }
+    }
+
+    .carousel {
+        margin-left: -15px;
+        width: 631px;
+        height: 587px;
+
+        &__prev {
+            bottom: 115px;
+            left: 65px;
+        }
+
+        &__next {
+            top: 90px;
+            right: 30px;
+        }
+    }
+
+    .beautiful {
+        &__header-block,
+        &__descr-block {
+            min-height: 300px;
+            padding-top: 50px;
+        }
+    }
+
+    .ipad {
+        padding-top: 50px;
+        text-align: center;
+
+        &__header {
+            max-width: 100%;
+        }
+
+        &__descr {
+            max-width: 50%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    .slider {
+        top: 365px;
+    }
+
+    .photo {
+        text-align: center;
+
+        &__item {
+            &:not(:last-child) {
+                margin: 4px;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:nth-child(1) {
+                order: 1;
+            }
+        }
+
+        &__left,
+        &__right {
+            top: 73%;
+        }
+    }
+
+    .join {
+        padding: 50px 15px;
+    }
+
+    .footer {
+        min-height: 600px;
+        padding-top: 30%;
+
+        &__label {
+            font-size: 60px;
+            line-height: 90px;
+        }
+    }
+}

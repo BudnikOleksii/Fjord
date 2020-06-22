@@ -24,6 +24,9 @@
     line-height: 80px;
     font-weight: 100;
     color: $color;
+    @media only screen and (max-width: 1199px) {
+        font-size: 60px;
+    }
 }
 
 @mixin btn-default($bg-color) {
