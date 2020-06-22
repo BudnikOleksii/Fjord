@@ -24,8 +24,13 @@
     line-height: 80px;
     font-weight: 100;
     color: $color;
+
     @media only screen and (max-width: 1199px) {
         font-size: 60px;
+    }
+
+    @media only screen and (max-width: 991px) {
+        font-size: 50px;
     }
 }
 
