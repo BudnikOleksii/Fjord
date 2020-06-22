@@ -1,0 +1,107 @@
+.footer {
+    min-height: 809px;
+    padding-top: 399px;
+    background: url(../img/bg_2.jpg) center center/cover no-repeat;
+    position: relative;
+
+    &__label {
+        position: absolute;
+        top: -75px;
+        right: 16%;
+        font-size: 90.1px;
+        line-height: 120px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: $color-black;
+        text-align: right;
+    }
+
+    &__block {
+        display: flex;
+        width: 100%;
+        height: 282px;
+        padding: 41px 52px 48px 52px;
+        background-color: $color-black;
+        border-radius: 2.0px;
+    }
+
+    &__logo {
+        margin-right: 43px;
+    }
+
+    &__menu {
+        display: flex;
+        margin-top: -10px;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin-right: 76px;
+    }
+
+    &__link {
+        &, 
+        &:link,
+        &:visited {
+            font-size: 12px;
+            line-height: 40px;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: $color-white;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $color-blue;
+        }
+    }
+
+    &__contacts {
+        margin-left: auto;
+        margin-top: -20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__made-by {
+        opacity: 0.2;
+        font-size: 11px;
+        line-height: 40px;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+        color: $color-white;
+    }
+
+    &__link-craft {
+        margin-top: auto;
+        &, 
+        &:link,
+        &:visited {
+            opacity: 0.2;
+            font-size: 12px;
+            line-height: 1.2;
+            font-weight: 300;
+            letter-spacing: 0.01em;
+            color: $color-white;
+        }
+
+        &:hover {
+            opacity: 1;
+            text-decoration: none;
+            color: $color-blue;
+        }        
+    }
+
+    &__social {
+        margin-top: 15px;
+        display: flex;
+    }
+
+    &__social-item {
+        margin-left: 25px;
+    }
+}
