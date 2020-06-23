@@ -252,4 +252,96 @@
     .carousel {
         height: 520px;
     }
+
+    .features {
+        padding-top: 150px;
+
+        &__item {
+            margin-top: 50px;
+            flex: 0 0 46%;
+        }
+    }
+
+    .qoutes-slider {
+        &__container {
+            min-height: auto;
+        }
+
+        &__slide {
+            padding: 60px 30px 40px 30px;
+        }
+
+        &__text {
+            font-size: 30px;
+        }
+    }
+    
+    .photo__left,
+    .photo__right {
+        position: relative;
+        margin: 15px;
+    }
+
+    .join {
+        padding: 25px 15px;
+    }
+
+    .packages {
+        padding: 25px 0;
+
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__item {
+            flex: 0 0 70%;
+            margin-bottom: 25px;
+        }
+    }
+
+    .footer {
+        min-height: 290px;
+
+        &__label {
+            top: 0;
+            font-size: 35px;
+            line-height: 50px;
+        }
+
+        &__block {
+            position: absolute;
+            top: 75%;
+            left: 0;
+            padding: 25px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        &__link {
+            &,
+            &:link,
+            &:visited {
+                font-size: 10px;
+                line-height: 30px;
+            }
+        }
+
+        &__contacts {
+            margin: 0;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &__made-by {
+            display: none;
+        }
+
+        &__link-craft {
+            order: 1;
+            flex: 0 0 100%;
+        }
+    }
 }
