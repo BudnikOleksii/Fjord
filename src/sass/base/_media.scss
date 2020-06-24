@@ -489,6 +489,10 @@
             display: none;
         }
     }
+
+    .packages__item {
+        flex: 0 0 90%;
+    }
     
     .footer {
         &__list {
@@ -525,5 +529,17 @@
         &__link-craft {
             display: none;
         }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .carousel {
+        height: 325px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .carousel {
+        height: 286px;
     }
 }
