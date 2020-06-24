@@ -454,14 +454,34 @@
     }
 
     .qoutes-slider {
+        &__slide {
+            padding: 30px 15px 0px 15px;
+
+            &::before {
+                top: 10px;
+                left: 15px;
+            }
+
+            &::after {
+                right: 20px;
+                bottom: -20px;
+            }
+        }
+
         &__text {
             font-size: 25px;
+            br {
+                display: none;
+            }
         }
     }
 
     .photo {
+        padding: 0;
+
         &__header {
             font-size: 23px;
+            line-height: 50px;
         }
 
         &__left,
@@ -473,12 +493,37 @@
     .footer {
         &__list {
             margin-right: 25px;
+            margin-bottom: 0;
         }
 
         &__label {
             right: 5%;
             font-size: 25px;
             line-height: 40px;
+        }
+
+        &__block {
+            padding: 10px;
+        }
+        
+        &__logo {
+            margin: 0;
+        }
+
+        &__contacts {
+            flex-direction: row;
+        }
+
+        &__craft-logo {
+            width: 30%;
+        }
+
+        &__social {
+            margin-top: 0;
+        }
+
+        &__link-craft {
+            display: none;
         }
     }
 }
