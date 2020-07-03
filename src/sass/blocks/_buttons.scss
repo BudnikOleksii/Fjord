@@ -46,3 +46,17 @@
         }
     }
 }
+
+.link {
+    &,
+    &:link,
+    &:visited {
+        @include small-text;
+        color: $color-text;
+    }
+
+    &:hover {
+        color: $color-dark;
+        background-color: $color-blue;
+    }
+}
